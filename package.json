@@ -1,0 +1,37 @@
+{
+  "name": "isomorphic-cache-fetch",
+  "version": "0.0.1",
+  "description": "A library which uses cache on top of isomorphic-fetch",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NimaSoroush/isomorphic-cache-fetch.git"
+  },
+  "keywords": [
+    "Cache",
+    "isomorphic fetch",
+    "isomorphic cached fetch"
+  ],
+  "author": "Nima Soroush",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.1.18",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-mocha": "^1.0.2",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "es6-promise": "^4.0.5",
+    "isomorphic-fetch": "^2.2.1",
+    "node-cache": "^4.1.0"
+  }
+}
